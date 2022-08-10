@@ -27,8 +27,8 @@ public class HerokuAppTest {
     }
     @Test
     void dragAndDropTest(){
-        $("#column-a").shouldHave(text("a"));
-        $("#column-b").shouldHave(text("b"));
+        $("#column-a").shouldHave(text("A"));
+        $("#column-b").shouldHave(text("B"));
         $("#column-a").dragAndDropTo($("#column-b"));
         $("#column-a").shouldHave(text("B"));
         $("#column-b").shouldHave(text("A"));
@@ -36,8 +36,8 @@ public class HerokuAppTest {
     }
     @Test
     void actionsDragAndDropTest(){
-        $("#column-a").shouldHave(text("a"));
-        $("#column-b").shouldHave(text("b"));
+        $("#column-a").shouldHave(text("A"));
+        $("#column-b").shouldHave(text("B"));
 //        actions().moveToElement($("#column-a")).clickAndHold().moveByOffset(30, 0).release().perform();
 //        actions().dragAndDropBy($("#column-b"), 250, 0).perform();  todo: выяснить почему не работает
     }
